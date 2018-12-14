@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+      <head>
+      <meta charset="utf-8">
+      <title>examen_de_programacion_primer_parcial</title>
+      </head>
+      <body>
+      <script >
+      function verificar() {
+
+          var deportes = '';
+          if(document.getElementById("checkbox1").checked)
+          {
+            deportes=deportes+'futbol';
+          }
+          if(document.getElementById("checkbox2").checked)
+          {
+            deportes=deportes+'basket';
+          }
+          if(document.getElementById("checkbox3").checked)
+          {
+            deportes=deportes+'tenis';
+          }
+
+          alert (los deportes seleccionados son:'+deportes);
+      }
+
+    </script>
+    <form >
+      seleccione los deportes que practica:<br>
+      <input type="checkbox" id="checkbox1">1.futbol <br>
+      <input type="checkbox" id="checkbox2">2.basket<br>
+      <input type="checkbox" id="checkbox3">3.tenis <br>
+      <input type="button"  value="presionar" onclick="verificar()">
+
+      </form>
+
+      </body>
+    </html>
